@@ -16,7 +16,10 @@
             <p class="sub-title">A palindrome is a word that reads the same forwards and backwards.</p>
         </header>
         <div class="inputes">
-            <input id="input" class="input" type="text" placeholder="Enter text or number">
+            <div class="input-group">
+                <input id="input" class="input" type="text" required>
+                <label for="name" class="input-lable">Enter text or number</label>
+            </div>
             <button onclick="checker()" id="btn" class="btn">Check Palindrome</button>
         </div>
         <p class="info-text"></p>

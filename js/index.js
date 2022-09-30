@@ -5,7 +5,7 @@ const infoText = document.querySelector(".info-text");
 txtInput.addEventListener("input", () => {
   if (txtInput.value.length === 0) {
     btn.style.pointerEvents = "none";
-    btn.style.opacity = "0.7";
+    btn.style.opacity = "0.5";
   } else {
     btn.style.pointerEvents = "auto";
     btn.style.opacity = "1";
@@ -32,5 +32,6 @@ const checker = () => {
   const display = isPalindrome(txtInput.value);
   infoText.innerHTML = display;
   txtInput.value = "";
-  btn.style.opacity = "0.7";
+  btn.style.pointerEvents = "none";
+  btn.style.opacity = "0.5";
 };
